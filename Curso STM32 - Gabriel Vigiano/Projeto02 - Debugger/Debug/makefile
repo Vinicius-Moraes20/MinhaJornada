@@ -60,8 +60,8 @@ all: main-build
 main-build: Projeto02\ -\ Debugger.elf secondary-outputs
 
 # Tool invocations
-Projeto02\ -\ Debugger.elf Projeto02\ -\ Debugger.map: $(OBJS) $(USER_OBJS) C:\xampp\htdocs\MinhaJornada\Curso\ STM32\ -\ Gabriel\ Vigiano\Projeto02\ -\ Debugger\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Projeto02 - Debugger.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\xampp\htdocs\MinhaJornada\Curso STM32 - Gabriel Vigiano\Projeto02 - Debugger\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto02 - Debugger.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Projeto02\ -\ Debugger.elf Projeto02\ -\ Debugger.map: $(OBJS) $(USER_OBJS) C:\Users\vinicius.pereira\Documents\GitHub\MinhaJornada\Curso\ STM32\ -\ Gabriel\ Vigiano\Projeto02\ -\ Debugger\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Projeto02 - Debugger.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\vinicius.pereira\Documents\GitHub\MinhaJornada\Curso STM32 - Gabriel Vigiano\Projeto02 - Debugger\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto02 - Debugger.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

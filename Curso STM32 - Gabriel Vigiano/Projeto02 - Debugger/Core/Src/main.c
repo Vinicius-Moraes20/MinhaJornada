@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 
 uint8_t teste = 0;
+uint8_t vetor[2];
 
 /* USER CODE END Includes */
 
@@ -65,7 +66,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	vetor[0] = 13;
+	vetor[1] = 20;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
