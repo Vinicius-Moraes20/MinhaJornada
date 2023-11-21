@@ -1,0 +1,10 @@
+23:12:11 **** Incremental Build of configuration Debug for project Projeto02 - Debugger ****
+make -j12 all 
+arm-none-eabi-size   Projeto02\ -\ Debugger.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5104	     20	   1572	   6696	   1a28	Projeto02 - Debugger.elf
+Finished building: default.size.stdout
+ 
+
+23:12:12 Build Finished. 0 errors, 0 warnings. (took 250ms)
+
