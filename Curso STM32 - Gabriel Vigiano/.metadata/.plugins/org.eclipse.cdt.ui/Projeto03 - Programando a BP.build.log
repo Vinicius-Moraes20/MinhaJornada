@@ -1,0 +1,22 @@
+18:05:09 **** Incremental Build of configuration Debug for project Projeto03 - Programando a BP ****
+make -j4 all 
+arm-none-eabi-gcc -o "Projeto03 - Programando a BP.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vinicius.pereira\Documents\GitHub\MinhaJornada\Curso STM32 - Gabriel Vigiano\Projeto03 - Programando a BP\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto03 - Programando a BP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto03 - Programando a BP.elf
+ 
+arm-none-eabi-size   Projeto03\ -\ Programando\ a\ BP.elf 
+arm-none-eabi-objdump -h -S  Projeto03\ -\ Programando\ a\ BP.elf  > "Projeto03 - Programando a BP.list"
+arm-none-eabi-objcopy  -O ihex  Projeto03\ -\ Programando\ a\ BP.elf  "Projeto03 - Programando a BP.hex"
+   text	   data	    bss	    dec	    hex	filename
+   6084	     20	   1572	   7676	   1dfc	Projeto03 - Programando a BP.elf
+arm-none-eabi-objcopy  -O binary  Projeto03\ -\ Programando\ a\ BP.elf  "Projeto03 - Programando a BP.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Projeto03 - Programando a BP.list
+ 
+Finished building: Projeto03 - Programando a BP.hex
+ 
+Finished building: Projeto03 - Programando a BP.bin
+ 
+
+18:05:11 Build Finished. 0 errors, 0 warnings. (took 2s.183ms)
+
